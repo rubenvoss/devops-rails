@@ -84,7 +84,7 @@ logout from your server with
 exit
 ```
 
-
+<!-- This is commented out.
 # Add a SSH Key to login securely
 If you want to watch a video about it:  
 https://youtu.be/U_uiVyF6MEs?t=507  
@@ -113,7 +113,7 @@ exit the ssh and log back in again.
 ```
 exit
 ```
-
+-->
 
 
 
