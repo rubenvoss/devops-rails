@@ -28,6 +28,8 @@ https://www.netcup.de/vserver/vps.php
 https://www.netcup.de/bestellen/domainangebote.php
 <br />
 
+### [Setup your server](server_setup.md)
+
 # Setup your server
 With netcup Debian comes preinstalled.  
 I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux. 
