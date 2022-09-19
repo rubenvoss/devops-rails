@@ -44,7 +44,7 @@ root@v2202209103428200491:~#
 ```
   
 # Change your root password and add a user
-After logging in the first time, you should set up a new secure password, that only you know. Right now your root password is available in your emails, so it is not secure.  
+After logging in the first time, you should set up a new secure password, that **only you** know. Right now your root password is available in your emails, so it is not secure.  
 type in to your command line:
 ```
 passwd
@@ -72,7 +72,6 @@ ruben@v2202209103428200491:~#
 ```
   
 <br />
-
 **Extra: add autocompletion, so you can use tab to autocomplete filenames**  
 
 ```
@@ -83,6 +82,20 @@ logout from your server with
 ```
 exit
 ```
+
+# Let's secure your server
+If you want to watch a video about it:  
+https://youtu.be/Bx_HkLVBz9M
+<br />
+
+**Automatically install updates with unattended-upgrades**
+```
+sudo apt install unattended-upgrades
+```
+```
+sudo dpkg-reconfigure --priority low unattended-upgrades
+```
+
 
 <!-- This is commented out.
 # Add a SSH Key to login securely
@@ -115,14 +128,3 @@ exit
 ```
 -->
 
-
-
-
-
-
-Next, change your root users password, so that your server can't be hacked after someone 
-
-Then, we will add an admin user with su access. I used my own name.
-```
-
-```
