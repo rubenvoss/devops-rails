@@ -61,7 +61,14 @@ cd
 touch index.html
 nano index.html
 ```
-write something like `<h1>hello caddy!</h1>` into your html file and save it with ctrl + x
+write something like `<h1>hello caddy!</h1>` into your html file and save it with ctrl + x.  
+Start a Caddy file-server with
+```
+caddy file-server --listen :2015
+```
+and go to your server ip in your Browser. That's the ip you used with the `ssh root@123.456.789.0` command. Add the caddy port to your ip, so that it looks like this:   
+123.456.789.0:2015
+If you see your static page, congrats! If not, send me a message on Github :)
 
 
 ## Install Docker
