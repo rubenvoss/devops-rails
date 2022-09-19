@@ -50,12 +50,21 @@ ruben@v2202209103428200491:~#
 sudo apt update
 sudo apt install bash-completion
 ```
-logout from your server with  
-```
-exit
-```
 
-**Docker**
+## Install Caddyserver
+Install a stable release:
+https://caddyserver.com/docs/install#debian-ubuntu-raspbian
+### Check if caddyserver is working:
+make a simple html file
+```
+cd
+touch index.html
+nano index.html
+```
+write something like <h1>hello caddy!</h1> into your html file and save it with ctrl + x
+
+
+## Install Docker
 https://docs.docker.com/engine/install/debian/  
 https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user  
 
