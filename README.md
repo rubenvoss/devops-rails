@@ -79,6 +79,11 @@ ruben@v2202209103428200491:~#
 sudo apt update
 sudo apt install bash-completion
 ```
+logout from your server with  
+```
+exit
+```
+
 
 # Add a SSH Key to login securely
 If you want to watch a video about it:  
@@ -104,6 +109,11 @@ cd .ssh
 touch authorized_keys
 cd
 ```
+exit the ssh and log back in again.
+```
+exit
+```
+
 
 
 
