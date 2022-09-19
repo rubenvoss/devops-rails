@@ -73,6 +73,10 @@ If you see your static page, congrats! If not, send me a message on Github :)
 
 because netcup doesnt allow listening on low ports
 
+DNS provider modules in caddy:
+https://caddy.community/t/how-to-use-dns-provider-modules-in-caddy-2/8148
+
+
 ## Install Docker
 https://docs.docker.com/engine/install/debian/
 https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
