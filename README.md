@@ -29,9 +29,10 @@ https://www.netcup.de/bestellen/domainangebote.php
 <br />
 
 # Setup your server
-I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux. With netcup Debian comes preinstalled.  
-On netcup, you will get and email with your servers IP Adress and a root password, that you can use to login.  
-Now use SSH to login to your Server via the Command Line:
+With netcup Debian comes preinstalled.  
+I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux. 
+On netcup, you will get and email with your servers IP Adress and a root password.  
+Use this info to login with SSH:  
 ```
 ssh root@123.456.78.0
 ```
@@ -76,8 +77,11 @@ ruben@v2202209103428200491:~#
 If you want to watch a video about it:  
 https://youtu.be/U_uiVyF6MEs?t=507  
 
-First, lets add a SSH keypair
-
+First, lets add a SSH keypair. I recommend adding a password to your ssh keypair.
+```
+ssh-keygen
+```
+The terminal will tell you, where your two ssh key files are saved.
 
 
 
