@@ -30,5 +30,5 @@ https://www.netcup.de/bestellen/domainangebote.php
 <br />
 
 ### [1. Setup your server](setup_server.md)
-[2. Secure your server](secure_server.md)
+### [2. Secure your server](secure_server.md)
 
