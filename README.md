@@ -21,8 +21,8 @@ After Reading this Guide you can:
 - Deploy your Rails App with Docker containers
 
 # Buy a VPS and Domain
-I used netcup for both of this, to have all of my information in one spot, but you can use any domain/hosting service. 
-https://www.netcup.de/vserver/vps.php
+I used netcup for both of this (to have all of my information in one spot), but you can use any domain/hosting service. 
+https://www.netcup.de/vserver/vps.php  
 https://www.netcup.de/bestellen/domainangebote.php
 
 # Setup your server
