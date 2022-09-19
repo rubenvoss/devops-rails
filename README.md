@@ -1,12 +1,12 @@
 # DevOpsify your (Rails) App(s)
-**What are the benefits of Devopsifying my Webapp(s)?**  
+**What are the benefits of DevOpsifying my Webapp(s)?**  
 - Your Webapps will be updated automatically, after you merge to master - no more heroku push!
 - Getting your own Virtual Private Server is cheaper than having a managed host like Heroku, AWS, GCP
 - When you add tests to your Webapp, less bugs will slip through to your Users
 - You're only gonna have to buy one domain, and will be able to host all your Projects on it with subdomains!
 - You're gonna learn some Docker, which is gonna make your life as a Developer easier!
-
-**After Reading this Guide you can:**
+  
+**After Reading this Guide, you can:**
 - Host multiple Webapps on one Website, like so:
   - project1.website.com
   - project2.website.com
