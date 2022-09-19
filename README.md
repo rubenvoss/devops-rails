@@ -19,3 +19,16 @@ After Reading this Guide you can:
 - Add a CI/CD Pipeline to your Rails App with github Actions
 - Integrate testing into your Rails App
 - Deploy your Rails App with Docker containers
+
+# Buy a VPS and Domain
+I used netcup for both of this, to have all of my information in one spot, but you can use any domain/hosting service. 
+https://www.netcup.de/vserver/vps.php
+https://www.netcup.de/bestellen/domainangebote.php
+
+# Setup your server
+I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux. With netcup Debian comes preinstalled.
+On netcup, you will get and email with your servers IP Adress and a root password, that you can use to login.
+Now use SSH to login to your Server via the Command Line
+```
+ssh root@123.456.78.0
+```
