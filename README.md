@@ -69,18 +69,9 @@ ssh ruben@123.456.78.0
 You last line should be something like this:
 ```
 ruben@v2202209103428200491:~#
-```
-  
+```  
 <br />
-**Extra: add autocompletion, so you can use tab to autocomplete filenames**  
-```
-sudo apt update
-sudo apt install bash-completion
-```
-logout from your server with  
-```
-exit
-```
+
 
 # Let's secure your server
 If you want to watch a video about it:  
@@ -94,6 +85,55 @@ sudo apt install unattended-upgrades
 ```
 sudo dpkg-reconfigure --priority low unattended-upgrades
 ```
+**Setup a firewall with ufw**
+```
+sudo apt install ufw
+```
+IMPORTANT: allow SSH access (if you don't do this, you will be locked out of your server).
+```
+sudo ufw allow 22
+sudo ufw allow OpenSSH
+```
+**Install fail2ban**
+```
+sudo apt-get install -y fail2ban
+sudo systemctl start fail2ban
+sudo systemctl enable fail2ban
+```
+
+go to jail.local file to set up config
+```
+cd /etc/fail2ban
+
+sudo nano jail.local
+```
+
+Insert the following code:  
+```
+[sshd]
+enabled = true
+port = 22
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 4
+```
+
+# Setting up your server
+**Add autocompletion, so you can use tab to autocomplete filenames.**  
+```
+sudo apt update
+sudo apt install bash-completion
+```
+logout from your server with  
+```
+exit
+```
+
+**Docker**
+https://docs.docker.com/engine/install/debian/  
+https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user  
+
+**Watchtower**
 
 
 <!-- This is commented out.
