@@ -6,7 +6,7 @@
 - You're only gonna have to buy one domain, and will be able to host all your Projects on it with subdomains!
 - You're gonna learn some Docker, which is gonna make your life as a Developer easier!
 <br />
-  
+
 **After Reading this Guide, you can:**
 - Host multiple Webapps on one Website, like so:
   - project1.website.com
@@ -20,12 +20,14 @@
 - Add a CI/CD Pipeline to your Rails App with github Actions
 - Integrate testing into your Rails App
 - Deploy your Rails App with Docker containers
-  
+<br />
+
 # Buy a VPS and Domain
 I used netcup for both of this (to have all of my information in one spot), but you can use any domain/hosting service. 
 https://www.netcup.de/vserver/vps.php  
 https://www.netcup.de/bestellen/domainangebote.php
-  
+<br />
+
 # Setup your server
 I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux. With netcup Debian comes preinstalled.  
 On netcup, you will get and email with your servers IP Adress and a root password, that you can use to login.  
@@ -46,8 +48,30 @@ type in to your command line:
 ```
 passwd
 ```
-and set your new password
+and set your new password.  
+<br />
+Now, lets add a sudo user - I will use my name as a username.  
+```
+adduser ruben
+```
+After adding your password and other information - you can leave the other info empty if you want - lets add the user 'ruben' as a sudo user, so that the user can execute sudo commands.
+```
+usermod -aG sudo ruben
+```
+Now lets logout and log back in as 'ruben'
+```
+exit
+```
+```
+ssh ruben@123.456.78.0
+```
+You last line should be something like this:
+```
+ruben@v2202209103428200491:~#
+```
   
+<br />
+
 # Add a SSH Key to login securely
 If you want to watch a video about it:  
 https://youtu.be/U_uiVyF6MEs?t=507  
