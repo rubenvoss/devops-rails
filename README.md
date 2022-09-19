@@ -28,7 +28,7 @@ https://www.netcup.de/vserver/vps.php
 https://www.netcup.de/bestellen/domainangebote.php
 <br />
 
-### [Setup your server](server_setup.md)
+### [Setup your server](setup_server.md)
 
 # Setup your server
 With netcup Debian comes preinstalled.  
