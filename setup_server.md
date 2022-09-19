@@ -1,6 +1,6 @@
 # Setup your server
 With netcup Debian comes preinstalled.  
-I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux. 
+I recommend using Debian on your server, since it is easy to use and very stable. CentOS would be a good alternative if you want to learn REDHAT Linux.  
 On netcup, you will get and email with your servers IP Adress and a root password.  
 Use this info to login with SSH:  
 ```
@@ -13,7 +13,7 @@ Now you should be logged in, and the last line should be something like this:
 root@v2202209103428200491:~#
 ```
   
-# Change your root password and add a user
+## Change your root password and add a user
 After logging in the first time, you should set up a new secure password, that **only you** know. Right now your root password is available in your emails, so it is not secure.  
 type in to your command line:
 ```
@@ -43,7 +43,7 @@ ruben@v2202209103428200491:~#
 <br />
 
 
-# Let's secure your server
+## Let's secure your server
 If you want to watch a video about it:  
 https://youtu.be/Bx_HkLVBz9M
 <br />
@@ -88,8 +88,7 @@ logpath = /var/log/auth.log
 maxretry = 4
 ```
 
-# Setting up your server
-**Add autocompletion, so you can use tab to autocomplete filenames.**  
+## Add autocompletion, so you can use tab to autocomplete filenames.  
 ```
 sudo apt update
 sudo apt install bash-completion
@@ -103,7 +102,7 @@ exit
 https://docs.docker.com/engine/install/debian/  
 https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user  
 
-**Watchtower**
+## Install Watchtower
 
 
 <!-- This is commented out.
