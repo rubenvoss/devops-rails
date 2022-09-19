@@ -27,6 +27,9 @@ I used netcup for both of this (to have all of my information in one spot), but 
 https://www.netcup.de/vserver/vps.php  
 https://www.netcup.de/bestellen/domainangebote.php
 <br />
+<br />
 
 ### [1. Setup your server](setup_server.md)
+<br />
+### [2. Secure your server](secure_server.md)
 
