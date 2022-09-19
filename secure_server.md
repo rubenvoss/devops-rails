@@ -42,3 +42,5 @@ filter = sshd
 logpath = /var/log/auth.log
 maxretry = 4
 ```
+
+And save with Ctrl + X
