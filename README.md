@@ -6,6 +6,7 @@
 - You're only gonna have to buy one domain, and will be able to host all your Projects on it with subdomains!
 - You're gonna learn some Docker, which is gonna make your life as a Developer easier!
   
+  
 **After Reading this Guide, you can:**
 - Host multiple Webapps on one Website, like so:
   - project1.website.com
