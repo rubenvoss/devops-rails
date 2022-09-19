@@ -14,7 +14,7 @@ sudo dpkg-reconfigure --priority low unattended-upgrades
 ```
 sudo apt install ufw
 ```
-IMPORTANT: allow SSH access (if you don't do this, you will be locked out of your server).
+**IMPORTANT:** allow SSH access (if you don't do this, you will be locked out of your server).
 ```
 sudo ufw allow 22
 sudo ufw allow OpenSSH
