@@ -40,3 +40,11 @@ root@v2202209103428200491:~#
 ```
 
 # Secure your server
+First, lets add a SSH keypair
+
+Next, change your root users password, so that your server can't be hacked after someone 
+
+Then, we will add an admin user with su access. I used my own name.
+```
+
+```
