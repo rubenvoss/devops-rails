@@ -39,8 +39,25 @@ Now you should be logged in, and the last line should be something like this:
 root@v2202209103428200491:~#
 ```
 
-# Secure your server
+# Change your root password and add a user
+After logging in the first time, you should set up a new secure password, that only you know. Right now your root password is available in your emails, so it is not secure.  
+type in to your command line:
+```
+passwd
+```
+and set your new password
+  
+# Add a SSH Key to login securely
+If you want to watch a video about it:  
+https://youtu.be/U_uiVyF6MEs?t=507  
+
 First, lets add a SSH keypair
+
+
+
+
+
+
 
 Next, change your root users password, so that your server can't be hacked after someone 
 
