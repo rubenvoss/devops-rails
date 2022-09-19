@@ -72,7 +72,9 @@ ruben@v2202209103428200491:~#
 ```
   
 <br />
-**Extra: add autocompletion, so you can use tab to autocomplete filenames**
+
+**Extra: add autocompletion, so you can use tab to autocomplete filenames**  
+
 ```
 sudo apt update
 sudo apt install bash-completion
