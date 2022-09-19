@@ -61,7 +61,7 @@ cd
 touch index.html
 nano index.html
 ```
-write something like <h1>hello caddy!</h1> into your html file and save it with ctrl + x
+write something like `<h1>hello caddy!</h1>` into your html file and save it with ctrl + x
 
 
 ## Install Docker
