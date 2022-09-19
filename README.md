@@ -32,3 +32,11 @@ Now use SSH to login to your Server via the Command Line
 ```
 ssh root@123.456.78.0
 ```
+Add your server to your known hosts
+After that, your server will ask you for your password.
+Now you should be logged in, and the last line should be something like this:
+```
+root@v2202209103428200491:~#
+```
+
+# Secure your server
