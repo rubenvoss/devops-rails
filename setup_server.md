@@ -65,6 +65,10 @@ With this you can serve your Webapps to your users. We're gonna use it as a reve
 
 ### Let's get it working
 First, lets run nginx in a docker container to get the basics working.
+```
+docker run --name mynginx1 -p 80:80 -d nginx
+```
+Go to your servers IP adress and check if you see the nginx welcome page.
 
 
 ## Install Watchtower
