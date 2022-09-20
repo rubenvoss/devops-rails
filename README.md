@@ -12,9 +12,12 @@
   - project1.website.com
   - project2.website.com
   - experiment.website.com
-- Setup your own VPS
+- Setup your own VPS (Virtual Private Server)
   - Configure SSH keypairs on your VPS
-  - Setup Caddyserver, Watchtower, Docker
+  - Setup Nginx, Watchtower, Docker
+  - Configure a reverse Proxy to host multiple Subdomains on one Website
+  
+- Secure your server 
   - Keep all important packages up to date
   - 
 - Add a CI/CD Pipeline to your Rails App with github Actions
