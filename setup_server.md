@@ -51,35 +51,21 @@ sudo apt update
 sudo apt install bash-completion
 ```
 
-## Install Caddyserver
-Install a stable release:
-https://caddyserver.com/docs/install#debian-ubuntu-raspbian
-### Check if caddyserver is working:
-make a simple html file
-```
-cd
-touch index.html
-nano index.html
-```
-write something like `<h1>hello caddy!</h1>` into your html file and save it with ctrl + x.
-Start a Caddy file-server with
-```
-caddy file-server --listen :2015
-```
-and go to your server ip in your Browser. That's the ip you used with the `ssh root@123.456.789.0` command. Add the caddy port to your ip, so that it looks like this:
-123.456.789.0:2015
-If you see your static page, congrats! If not, send me a message on Github :)
-
-
-because netcup doesnt allow listening on low ports
-
-DNS provider modules in caddy:
-https://caddy.community/t/how-to-use-dns-provider-modules-in-caddy-2/8148
-
-
 ## Install Docker
 https://docs.docker.com/engine/install/debian/
 https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+
+
+## Install nginx Server
+With this you can serve your Webapps to your users. We're gonna use it as a reverse proxy to host multiple Webapps on one Website with subdomains like so:
+  - project1.website.com
+  - project2.website.com
+  - profile.website.com
+  - website.com
+
+### Let's get it working
+First, lets run nginx in a docker container to get the basics working.
+
 
 ## Install Watchtower
 
