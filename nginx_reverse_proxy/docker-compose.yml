@@ -1,4 +1,7 @@
 services:
-    nginx:
-        image: nginx
-        restart: always
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    # volumes:
+    #   - ./src:/usr/share/nginx/html
