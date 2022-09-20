@@ -69,38 +69,3 @@ First, lets run nginx in a docker container to get the basics working.
 docker run --name mynginx1 -p 80:80 -d nginx
 ```
 Go to your servers IP adress and check if you see the nginx welcome page.
-
-
-## Install Watchtower
-
-
-<!-- This is commented out.
-# Add a SSH Key to login securely
-If you want to watch a video about it:
-https://youtu.be/U_uiVyF6MEs?t=507
-
-First, lets add a SSH keypair. I recommend adding a password to your ssh keypair.
-```
-ssh-keygen
-```
-If you give a name to your ssh keyfiles, they will be saved in your home folder.
-I called my file rubenvoss_server.pub on my local machine and rubenvoss_server_rsa.pub on my server.
-Now copy your keyfile pair to your server:
-```
-cd
-scp rubenvoss_server.pub ruben@188.68.51.63:~/rubenvoss_server_rsa.pub
-```
-Now login to your server and check if it is there - with cd & ls.
-<br />
-Next, add your SSH key to your authorized_keys:
-```
-mkdir .ssh
-cd .ssh
-touch authorized_keys
-cd
-```
-exit the ssh and log back in again.
-```
-exit
-```
--->
