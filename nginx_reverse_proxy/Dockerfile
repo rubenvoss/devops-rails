@@ -10,4 +10,4 @@ COPY ./index.html /usr/share/nginx/html
 
 # COPY ../src/index.html /data/www
 
-EXPOSE 80
+EXPOSE 8081
