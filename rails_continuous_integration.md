@@ -91,7 +91,8 @@ class HomepagesTest < ApplicationSystemTestCase
 end
 ```
 
-
+This would run perfectly fine on you machine, but since the Github server doesn't have a GUI it's only gonna accept headless chrome!
+<br>
 
 Now, let's change the application_system_test_case.rb file, located in the test folder to this:
 ```
