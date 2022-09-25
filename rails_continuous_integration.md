@@ -53,4 +53,10 @@ jobs:
       # this runs all system tests, if you want to add other tests, just add a name and run step
       - name: Run system tests
         run: bin/rails test:system
+      # other examples:
+      # - name: Run Rake tests
+      # run: bin/rake
+      # - name: Run all tests
+      # run: bin/rails test
 ```
+<br>
