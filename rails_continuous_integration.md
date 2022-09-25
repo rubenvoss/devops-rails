@@ -3,6 +3,46 @@ We'll set up automated testing that is going to happen on Githubs servers. Maybe
 With this setup, everytime someone opens a pull request to merge to master, tests will be run on the Github servers.
 ### Why not run tests on my local machine?
 If we run tests on the Github server with Docker containers, the environment will be the same **every single time** - some bugs are only visible for certain machines and not reproducable on another machine. Another benefit is, that it's impossible to forget running the tests.
+
+# Setup first test
+We need to actually add a test in our project to run it with github actions.
+<br>
+
+Let's add a system test, to mock a user action:
+https://guides.rubyonrails.org/testing.html#system-testing
+<br>
+
+for example:
+```
+$ bin/rails generate system_test visit_homepage
+```
+
+go to the test file and add the following:
+```
+require "application_system_test_case"
+
+class HomepagesTest < ApplicationSystemTestCase
+  test "visiting the index" do
+    visit root_path
+
+    # change the 'h1' and text to what you want to test for on your homepage
+    assert_selector "h1", text: "whatever text you have on your homepage"
+  end
+end
+```
+
+This would run perfectly fine on you machine, but since the Github server doesn't have a GUI it's only gonna accept headless chrome!
+<br>
+
+Now, let's change the application_system_test_case.rb file, located in the test folder to this:
+```
+require "test_helper"
+
+class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
+  driven_by :selenium, using: :headless_chrome
+end
+```
+
 # Setup Githb actions
 On your Repository page, click on Actions. Search for the Rails Action and add it.
 <br>
@@ -63,42 +103,3 @@ jobs:
       # run: bin/rails test
 ```
 <br>
-
-# Setup first test
-We need to actually add a test in our project to run it with github actions.
-<br>
-
-Let's add a system test, to mock a user action:
-https://guides.rubyonrails.org/testing.html#system-testing
-<br>
-
-for example:
-```
-$ bin/rails generate system_test visit_homepage
-```
-
-go to the test file and add the following:
-```
-require "application_system_test_case"
-
-class HomepagesTest < ApplicationSystemTestCase
-  test "visiting the index" do
-    visit root_path
-
-    # change the 'h1' and text to what you want to test for on your homepage
-    assert_selector "h1", text: "whatever text you have on your homepage"
-  end
-end
-```
-
-This would run perfectly fine on you machine, but since the Github server doesn't have a GUI it's only gonna accept headless chrome!
-<br>
-
-Now, let's change the application_system_test_case.rb file, located in the test folder to this:
-```
-require "test_helper"
-
-class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
-  driven_by :selenium, using: :headless_chrome
-end
-```
