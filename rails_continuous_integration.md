@@ -10,6 +10,9 @@ On your Repository page, click on Actions. Search for the Rails Action and add i
 Now there is a new file in your repository, under .github/workflows/rubyonrails.yml
 <br>
 
+**indentation is very important in yml files**
+<br>
+
 Change it to this:
 ```
 # This workflow will install a prebuilt Ruby version, install dependencies, and run tests.
