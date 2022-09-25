@@ -30,8 +30,11 @@ class HomepagesTest < ApplicationSystemTestCase
   end
 end
 ```
+<br>
+Now run it on your local machine and see if it works!
+<br>
 
-This would run perfectly fine on you machine, but since the Github server doesn't have a GUI it's only gonna accept headless chrome!
+This runs perfectly fine on your machine, but since the Github server doesn't have a GUI it's only gonna accept headless chrome!
 <br>
 
 Now, let's change the application_system_test_case.rb file, located in the test folder to this:
@@ -53,7 +56,7 @@ Now there is a new file in your repository, under .github/workflows/rubyonrails.
 **indentation is very important in yml files**
 <br>
 
-Change it to this:
+Change it to this(read the comments for explanations):
 ```
 # This workflow will install a prebuilt Ruby version, install dependencies, and run tests.
 name: "Ruby on Rails CI"
