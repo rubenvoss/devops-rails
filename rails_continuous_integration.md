@@ -12,18 +12,20 @@ Now there is a new file in your repository, under .github/workflows/rubyonrails.
 
 Change it to this:
 ```
-# This workflow will install a prebuilt Ruby version, install dependencies, and
-# run tests.
+# This workflow will install a prebuilt Ruby version, install dependencies, and run tests.
 name: "Ruby on Rails CI"
 on:
+  # this runs on every push to master or pull request.
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 jobs:
+  # the test job that we're running.
   test:
     runs-on: ubuntu-latest
     services:
+      # our database container that runs on linux alpine for speed.
       postgres:
         image: postgres:14.5-alpine3.16
         ports:
@@ -48,6 +50,7 @@ jobs:
       - name: Set up database schema
         run: bin/rails db:schema:load
       # Add or replace test runners here
+      # this runs all system tests, if you want to add other tests, just add a name and run step
       - name: Run system tests
         run: bin/rails test:system
 ```
