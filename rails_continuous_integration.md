@@ -106,3 +106,6 @@ jobs:
       # run: bin/rails test
 ```
 <br>
+
+<img width="806" alt="Screenshot 2022-09-26 at 17 25 40" src="https://user-images.githubusercontent.com/105738004/192317153-09f00826-f482-41ff-a9b8-afa922111b01.png">
+
