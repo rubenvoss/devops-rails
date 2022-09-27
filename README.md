@@ -32,5 +32,11 @@ https://www.netcup.de/bestellen/domainangebote.php
 <br />
 <br />
 
+
+### [3. Setup Docker for Development]()
+### [4. Setup your Database in Docker compose]()
+### [5. Test your rails app with Continuous integration]()
+
+### [6. Deploy your Rails app]()
 ### [1. Setup your server](setup_server.md)
 ### [2. Secure your server](secure_server.md)
