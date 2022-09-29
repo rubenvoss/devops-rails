@@ -26,18 +26,15 @@ Now you should be able to run your script with either 'bash run' or './run'.
 # Add your repo to your $PATH
 If you do not want to have to type in the ./ every time before typing in run, you have to add your Repository to your $PATH. If you use zsh, open the .zshrc file with:
 ```
-code ~/.zshrc
+code ~/.aliases
 ```
-There should be a bunch of stuff inside, the only thing you have to do, is to add this line:
+There should be some aliases inside, the only thing you have to do, is to add this line:
 ```
-export PATH="$PATH:/THE/FILE/PATH/TO/YOUR/REPO"
+alias run="./run"
 ```
-to the file and save. Replace the filepath with the filepath to your repo obviously ;). **Do not** add the path to your 'run' file, instead add the path to your Repository Folder.
-<br>
-
-Now, reload your source with:
+Now, reload zsh with:
 ```
-source ~/.zshrc
+exec zsh
 ```
 And check if your script is working with:
 ```
