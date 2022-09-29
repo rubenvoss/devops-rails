@@ -10,6 +10,8 @@ docker exec -it rails_development_server rails c
 ```
 run rails c
 ```
+<br>
+
 # Write the script
 Add a file with the name 'run' to your Repository, with this code in it(replace rails_development_server with your container name):
 ```
@@ -17,12 +19,16 @@ Add a file with the name 'run' to your Repository, with this code in it(replace 
 docker exec -it rails_development_server $@
 ```
 The ```$@``` takes all of the command you pass in after putting 'run' in your terminal and adds them to the script. In 'run rails c banana' the ```$@``` = 'rails c banana'.
+<br>
+
 # Give permission to execute to the script
 if you type './run' into your terminal, right now you will get a permissions error. That is because the file is not executable yet. We have to mark it as such.
 ```
 chmod +x run
 ```
 Now you should be able to run your script with either 'bash run' or './run'.
+<br>
+
 # Add an alias for run
 If you do not want to have to type in the ./ every time before typing in run, you have to add an alias. If you use zsh, open the .aliases file with:
 ```
