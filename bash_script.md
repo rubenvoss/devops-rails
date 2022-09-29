@@ -16,7 +16,7 @@ Add a file with the name 'run' to your Repository, with this code in it(replace 
 #!/bin/bash
 docker exec -it rails_development_server $@
 ```
-The ```$@``` takes all of the command you pass in after putting 'run' in your terminal and adds them to the script. In 'run rails c banana' the $@ = 'rails c banana'.
+The ```$@``` takes all of the command you pass in after putting 'run' in your terminal and adds them to the script. In 'run rails c banana' the ```$@``` = 'rails c banana'.
 # Give permission to execute to the script
 if you type './run' into your terminal, right now you will get a permissions error. That is because the file is not executable yet. We have to mark it as such.
 ```
