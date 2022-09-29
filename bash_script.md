@@ -30,7 +30,7 @@ code ~/.zshrc
 ```
 There should be a bunch of stuff inside, the only thing you have to do, is to add this line:
 ```
-export PATH="$PATH:~/THE/FILE/PATH/TO/YOUR/REPO"
+export PATH="$PATH:/THE/FILE/PATH/TO/YOUR/REPO"
 ```
 to the file and save. Replace the filepath with the filepath to your repo obviously ;). **Do not** add the path to your 'run' file, instead add the path to your Repository Folder.
 <br>
