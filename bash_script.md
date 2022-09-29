@@ -24,7 +24,7 @@ chmod +x run
 ```
 Now you should be able to run your script with either 'bash run' or './run'.
 # Add an alias for run
-If you do not want to have to type in the ./ every time before typing in run, you have to add your Repository to your $PATH. If you use zsh, open the .zshrc file with:
+If you do not want to have to type in the ./ every time before typing in run, you have to add an alias. If you use zsh, open the .aliases file with:
 ```
 code ~/.aliases
 ```
