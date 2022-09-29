@@ -23,7 +23,7 @@ if you type './run' into your terminal, right now you will get a permissions err
 chmod +x run
 ```
 Now you should be able to run your script with either 'bash run' or './run'.
-# Add your repo to your $PATH
+# Add an alias for run
 If you do not want to have to type in the ./ every time before typing in run, you have to add your Repository to your $PATH. If you use zsh, open the .zshrc file with:
 ```
 code ~/.aliases
