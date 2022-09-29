@@ -1,5 +1,5 @@
 # Bash 'run' script
-Everytime we want to run a command inside of our docker container, we have do type in docker exec -it container_name <COMMAND>. This is not very DRY, so let's write a script to automate this command. The Goal is, to type in 'run' instead of 'docker exec -it container_name'.
+Everytime we want to run a command inside of our docker container, we have do type in 'docker exec -it container_name COMMAND'. This is not very DRY, so let's write a script to automate this command. The Goal is, to type in 'run' instead of 'docker exec -it container_name'.
 Old way:
 ```
 docker exec -it rails_development_server rails c
