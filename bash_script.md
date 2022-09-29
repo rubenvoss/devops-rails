@@ -36,10 +36,10 @@ Now, reload zsh with:
 ```
 exec zsh
 ```
-And check if your script is working with:
+And check if your alias is working with:
 ```
 run
 ```
 <br>
 
-So now, whenever you add a script to your repo, it will be instantly available to you via the terminal. Careful with naming though, if there is another program with the same name, it will come before your script. So test the naming of your script.
+So now, whenever you add a script to your repo, it will be instantly available to you via the terminal. 
