@@ -16,3 +16,6 @@ cd nginx-1.22.0
             --with-http_ssl_module
 make
 make install
+
+# checks for the nginx version, was it installed?
+nginx -V
