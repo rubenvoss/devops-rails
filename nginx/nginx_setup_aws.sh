@@ -1,12 +1,12 @@
 #!/bin/bash
 
-### This script installs nginx on an Amazon AWS EC2 instance with the Amazon Linux 2 AMI (5.10) OS
+### This script installs nginx on an Amazon AWS EC2 instance with the Debian 11 OS
 sudo su -
 
 # download system dependencies
-yum update -y
-yum groupinstall 'Development Tools' -y
-yum install pcre pcre-devel zlib zlib-devel openssl openssl-devel -y
+apt update
+apt upgrade -y
+apt install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev unzip -y
 
 # download nginx && install nginx
 wget http://nginx.org/download/nginx-1.22.0.tar.gz

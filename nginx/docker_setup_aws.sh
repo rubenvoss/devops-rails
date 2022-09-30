@@ -1,14 +1,11 @@
 #!/bin/bash
 
-### this script installs docker on an Amazon AWS EC2 instance with the Amazon Linux 2 AMI (5.10) OS
+### this script installs docker on an Amazon AWS EC2 instance with the Debian 11 OS
 sudo su -
 
-yum update -y
-yum install -y docker
-service docker start
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sh get-docker.sh
 
 # so you don't have to type sudo before every docker command
-usermod -a -G docker ec2-user
-
-# docker autostart
-chkconfig docker on
+usermod -a -G docker admin
