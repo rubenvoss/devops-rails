@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /home/ec2-user
+sudo su -
+
+# cd /home/ec2-user
 yum update -y
 yum groupinstall 'Development Tools' -y
 yum install pcre pcre-devel zlib zlib-devel openssl openssl-devel -y
