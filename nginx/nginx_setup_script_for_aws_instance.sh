@@ -21,8 +21,14 @@ make install
 cd ~ || exit
 wget https://github.com/rubenvoss/devops-rails/archive/refs/heads/main.zip
 unzip main.zip # unzips into devops-rails-main folder
+
+# copy nginx.service file to add nginx to systemd
+rm -f /lib/systemd/system/nginx.service
 cp ~/devops-rails-main/nginx/nginx.service /lib/systemd/system/nginx.service
 
+# copy nginx.conf to setup configuration
+rm -f /etc/nginx/nginx.conf
+cp ~/devops-rails-main/nginx/nginx.conf /etc/nginx/nginx.conf
 
 # add nginx to startup, if the server restarts -> nginx restarts
 systemctl enable nginx
