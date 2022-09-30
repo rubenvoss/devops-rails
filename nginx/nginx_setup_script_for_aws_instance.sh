@@ -16,17 +16,22 @@ cd nginx-1.22.0 || exit
 make
 make install
 
-# checks for the nginx version, was it installed?
-nginx -V
+
+# download devops-rails repo, to have the nginx.service and nginx.conf files available
 cd ~ || exit
+wget https://github.com/rubenvoss/devops-rails/archive/refs/heads/main.zip
+unzip main.zip # unzips into devops-rails-main folder
+cp ~/devops-rails-main/nginx/nginx.service /lib/systemd/system/nginx.service
 
-# download nginx.service file for systemd && copy it into systemd folder
-wget https://raw.githubusercontent.com/rubenvoss/devops-rails/main/nginx/nginx.service
-cp nginx.service /lib/systemd/system/nginx.service
 
-# start nginx as a systemd service
-systemctl start nginx
-# check for the status of nginx
-systemctl status nginx
 # add nginx to startup, if the server restarts -> nginx restarts
 systemctl enable nginx
+
+# reboot server
+reboot
+# check for the status of nginx
+systemctl status nginx
+# checks for the nginx version, was it installed?
+nginx -V
+
+# remove leftover files
