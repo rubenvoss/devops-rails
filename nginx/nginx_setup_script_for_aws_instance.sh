@@ -20,5 +20,13 @@ make install
 nginx -V
 cd ~ || exit
 
-# download nginx.service file for systemd
+# download nginx.service file for systemd && copy it into systemd folder
 wget https://raw.githubusercontent.com/rubenvoss/devops-rails/main/nginx/nginx.service
+cp nginx.service /lib/systemd/system/nginx.service
+
+# start nginx as a systemd service
+systemctl start nginx
+# check for the status of nginx
+systemctl status nginx
+# add nginx to startup, if the server restarts -> nginx restarts
+systemctl enable nginx
