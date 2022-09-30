@@ -16,7 +16,9 @@ cd nginx-1.22.0 || exit
 make
 make install
 
-
 # checks for the nginx version, was it installed?
 nginx -V
 cd ~ || exit
+
+# download nginx.service file for systemd
+wget https://raw.githubusercontent.com/rubenvoss/devops-rails/main/nginx/nginx.service
