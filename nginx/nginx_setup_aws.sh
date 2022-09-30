@@ -1,4 +1,6 @@
 #!/bin/bash
+
+### This script installs nginx on an Amazon AWS EC2 instance with the Amazon Linux 2 AMI (5.10) OS
 sudo su -
 
 # download system dependencies
@@ -30,14 +32,17 @@ cp ~/devops-rails-main/nginx/nginx.service /lib/systemd/system/nginx.service
 rm -f /etc/nginx/nginx.conf
 cp ~/devops-rails-main/nginx/nginx.conf /etc/nginx/nginx.conf
 
-# add nginx to startup, if the server restarts -> nginx restarts
+# nginx autostart
 systemctl enable nginx
 
 # reboot server
 reboot
+
+
+
 # check for the status of nginx
-systemctl status nginx
+# systemctl status nginx
 # checks for the nginx version, was it installed?
-nginx -V
+# nginx -V
 
 # remove leftover files
