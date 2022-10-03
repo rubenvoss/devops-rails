@@ -38,6 +38,6 @@ https://www.netcup.de/bestellen/domainangebote.php
 ### [Write a bash script to avoid long docker exec command]()
 ### [5. Test your rails app with Continuous integration]()
 
-### [6. Deploy your Rails app]()
-### [1. Setup your server](setup_server.md)
+### [6. Deploy your Rails app to production]()
+### [1. Setup your server with nginx with a bash script](setup_server.md)
 ### [2. Secure your server](secure_server.md)
