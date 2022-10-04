@@ -1,13 +1,13 @@
 #!/bin/bash
 
-### This script installs nginx on an Amazon AWS EC2 instance with the Debian 11 OS
 sudo su -
 
 # download system dependencies
 apt update
 apt upgrade -y
-apt install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev unzip -y
+apt install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev unzip webhook -y
 
+### This script installs nginx on a VPS with the Debian 11 OS
 # download nginx && install nginx
 wget http://nginx.org/download/nginx-1.22.0.tar.gz
 tar -zxvf nginx-1.22.0.tar.gz
@@ -17,7 +17,6 @@ cd nginx-1.22.0 || exit
             --with-http_ssl_module
 make
 make install
-
 
 # download devops-rails repo, to have the nginx.service and nginx.conf files available
 cd ~ || exit
@@ -34,6 +33,21 @@ cp ~/devops-rails-main/nginx/nginx.conf /etc/nginx/nginx.conf
 
 # nginx autostart
 systemctl enable nginx
+
+
+
+### this script installs docker on a VPS with Debian 11 OS
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+# so you don't have to type sudo before every docker command
+usermod -a -G docker admin
+
+
+
+### this section sets up webhook
+
+
+
 
 # reboot server
 reboot
