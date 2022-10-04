@@ -3,7 +3,8 @@ On AWS, you have to launch an EC2 instance, set Debian as your OS, configure a s
 
 ## Security Group
 On AWS, make a security policy and expose ports 22 for SSH, 80 for HTTP and Port 9000 as a Custom TCP (source 0.0.0.0/0)
-[Security Group](security_group.jpg)
+![security_group](https://user-images.githubusercontent.com/105738004/193949224-90433bf1-a336-4ca9-b373-dd4b9ba1ea1c.jpg)
+
 
 Once it is launched, login with SSH and use admin as a user:
 ```
