@@ -1,43 +1,24 @@
-# DevOpsify your Rails App(s)
-## What are the benefits of DevOpsifying my Railsapps?
+# CI & CD for your Rails App(s)
+## [**Watch a short video about CI & CD**](https://www.youtube.com/watch?v=scEDHsr3APg)
+## What are the benefits of CI & CD for my Railsapps?
 - Your Webapps will be updated automatically, after you merge to master - no more heroku push!
-- Getting your own Virtual Private Server is cheaper than having a managed host like Heroku, AWS, GCP
-- When you add tests to your Webapp, less bugs will slip through to your Users
-- You're only gonna have to buy one domain, and will be able to host all your Projects on it with subdomains!
-- You're gonna learn some Docker, which is gonna make your life as a Developer easier!
+- Getting your own Virtual Private Server is cheaper than having a managed host like Heroku
+- When you add automatic testing to your Webapp, less bugs will slip through to your Users
+- You can test and deploy in small & manageable steps
+- Bonus: You're only gonna have to buy one domain, and will be able to host all your Projects on it with subdomains!
 <br />
 
-## After Reading this Guide, you can:
-- Host multiple Webapps on one Website, like so:
-  - project1.website.com
-  - project2.website.com
-  - experiment.website.com
-- Setup your own VPS (Virtual Private Server)
-  - Configure SSH keypairs on your VPS
-  - Setup Nginx, Watchtower, Docker
-  - Configure a reverse Proxy to host multiple Subdomains on one Website
-
-- Secure your server
-  - Keep all important packages up to date
-  -
-- Add a CI/CD Pipeline to your Rails App with github Actions
-- Integrate testing into your Rails App
-- Deploy your Rails App with Docker containers
+## What's in this guide?
+- Automatically test your App on a Github Server - Add a CI Pipeline to your Rails App with Github Actions
+- Configured your own VPS (Virtual Private Server)
+  - Setup Nginx, Docker
+  - Configured a reverse Proxy to host multiple Subdomains on one Website
+- Continuously Deploy your Rails App
 <br />
 
 # Buy a VPS and Domain
-I used netcup for both of this (to have all of my information in one spot), but you can use any domain/hosting service.
+I used AWS here, they're free for the first 12 months. You can use any VPS that runs Debian 11 (probably also other versions & Ubuntu, if you choose a different package manager you will have to change some code with installing system dependencies)
+https://aws.amazon.com/
 https://www.netcup.de/vserver/vps.php
-https://www.netcup.de/bestellen/domainangebote.php
 <br />
 <br />
-
-
-### [3. Setup Docker for Development]()
-### [4. Setup your Database in Docker compose]()
-### [Write a bash script to avoid long docker exec command]()
-### [5. Test your rails app with Continuous integration]()
-
-### [6. Deploy your Rails app to production]()
-### [1. Setup your server with nginx with a bash script](setup_server.md)
-### [2. Secure your server](secure_server.md)
