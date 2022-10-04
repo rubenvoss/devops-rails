@@ -1,6 +1,10 @@
 # Setup your server
 On AWS, you have to launch an EC2 instance, set Debian as your OS, configure a security group that allows http traffic and SSH traffic and set a SSH Keypair/password to login.
 
+## Security Group
+On AWS, make a security policy and expose ports 22 for SSH, 80 for HTTP and Port 9000 as a Custom TCP (source 0.0.0.0/0)
+[Security Group](security_group.jpg)
+
 Once it is launched, login with SSH and use admin as a user:
 ```
 ssh admin@123.456.78.0
@@ -13,7 +17,7 @@ admin@v2202209103428200491:~#
 ```
 
 ## Change your password
-Do this if you don't use a SSH keypair:  
+Do this if you don't use a SSH keypair:
 After logging in the first time, you should set up a new secure password, that **only you** know.
 type in to your command line:
 ```
