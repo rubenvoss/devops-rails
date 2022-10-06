@@ -32,8 +32,10 @@ bash <(curl -s https://raw.githubusercontent.com/rubenvoss/server-files-debian-1
 ```
 check if stuff was installed:
 ```
-# check for the status of nginx
-# systemctl status nginx
-# checks for the nginx version, was it installed?
-# nginx -V
+# check for the status of nginx - should be active
+systemctl status nginx
+# check for docker
+docker run hello-world
+# check for webhook
+systemctl status webhook
 ```
