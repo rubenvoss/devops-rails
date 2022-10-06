@@ -45,13 +45,13 @@ docker login
 ```
 
 ## Copy your Rails credential keys to the server
-The're in the config folder of your rails project, we have a Volume in the docker compose that's mirroring that config folder into your Docker container.
+The're in the config folder of your rails project, we have a Volume in the docker compose that's mirroring that config folder into your Docker container. Put them into a 'keys' folder on you server.
 ```
 exit
-scp -r ~/code/keys/config/ admin@18.192.54.84:~
+scp -r ~/code/keys/keys/ admin@18.192.54.84:~
 ```
 move them out of the homefolder
 ```
 ssh -i /Users/ruben/code/keys/rubenvoss.com.pem admin@123.456.789
-sudo cp -r config/ /opt/webhook/
+sudo cp -r keys/ /opt/webhook/
 ```
