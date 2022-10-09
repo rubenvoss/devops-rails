@@ -26,26 +26,75 @@ type in to your command line:
 passwd
 ```
 
-## Install everything you need to your server with this script:
+# Install everything you need to your server with this script:
+Fork this repo:
 ```
-bash <(curl -s https://raw.githubusercontent.com/rubenvoss/server-files-debian-11/main/setup_debian_11.sh)
+https://github.com/rubenvoss/server-files-debian-11
 ```
-check if stuff was installed:
+## 1. Adjust the docker-compose.yml file to match your docker compose setup
+<br>
+
+## 2. In the nginx.conf file, add your domain after server_name
+<br>
+
+## 3. Adjust the redeploy.sh with the commands you need. Right now it executes a docker compose up, after getting a new commit on the main/master branch on Github
+<br>
+
+## 4. Go to the code buttonn on your Fork in GitHub & right-click the Download ZIP to get the link
+<img src="download_zip.jpg" width="400">
+<br>
+
+## 5. Download your forked repo to your servers home folder & unzip it
+```
+cd ~
+sudo apt update
+sudo apt install unzip wget -y
+```
+Download your repo
+```
+wget YOUR_REPO_LINK
+```
+```
+unzip main.zip
+```
+<br>
+
+## 6. Rename it server_files
+```
+sudo mv YOUR_REPOS_FOLDER_NAME/ server_files/
+```
+<br>
+
+## 7. Now, give the script permissions:
+```
+sudo chmod +x server_files/setup_debian_11.sh
+```
+<br>
+
+## 8. Execute the script:
+This can take some time. Your server will reboot after the script is finished & you will have to ssh into it again.
+```
+server_files/setup_debian_11.sh
+```
+<br>
+
+## 9. Check if stuff was installed:
 ```
 # check for the status of nginx - should be active
 systemctl status nginx
-# check for docker
-docker run hello-world
-# check for webhook
+# check for webhook - should be active
 systemctl status webhook
+# check for docker - should download and run a container
+docker run hello-world
 ```
 login with dockerhub
 ```
 docker login
 ```
+<br>
 
-## Copy your Rails credential keys to the server
-The're in the config folder of your rails project, we have a Volume in the docker compose that's mirroring that config folder into your Docker container. Put them into a 'keys' folder on you server.
+## 10. Copy your Rails credential keys to the server
+The're in the config folder of your rails project, we have a Volume in the docker compose that's mirroring that config folder into your Docker container. Put them into a 'keys' folder on you server. This is like a better .env file with version control that you can share. [Here's an Article about rails credentials](https://kirillshevch.medium.com/encrypted-secrets-credentials-in-rails-6-rails-5-1-5-2-f470accd62fc)
 ```
 exit
 scp -r ~/code/keys/keys/ admin@18.192.54.84:~
