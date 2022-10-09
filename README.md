@@ -9,9 +9,18 @@
 - Continuously Deploy your Rails App
 <br />
 
-# Buy a VPS and Domain
+## Buy a VPS and Domain
 I used AWS here, they're free for the first 12 months. You can use any VPS that runs Debian 11 (probably also other versions & Ubuntu, if you choose a different package manager you will have to change some code with installing system dependencies)
+<br>
+
 https://aws.amazon.com/
+<br>
+
 https://www.netcup.de/vserver/vps.php
 <br />
 <br />
+
+## Prerequisites
+[Docker for your App](https://github.com/rubenvoss/docker-rails)
+
+## [Setup your server](setup_server.md)
