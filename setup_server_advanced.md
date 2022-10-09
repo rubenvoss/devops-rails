@@ -1,4 +1,4 @@
-# getting nginx to work
+# Adding multiple webapps to your server with nginx
 ```
 events {}
 

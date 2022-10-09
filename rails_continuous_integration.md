@@ -50,7 +50,7 @@ end
 On your Repository page, click on Actions. Search for the Rails Action and add it.
 <br>
 
-Now there is a new file in your repository, under .github/workflows/rubyonrails.yml
+Now there is a new file in your repository, under .github/workflows/rubyonrails.yml. You can rename it CI.yml for Continuous Integration.
 <br>
 
 **indentation is very important in yml files**
@@ -108,4 +108,3 @@ jobs:
 <br>
 
 <img width="806" alt="Screenshot 2022-09-26 at 17 25 40" src="https://user-images.githubusercontent.com/105738004/192317153-09f00826-f482-41ff-a9b8-afa922111b01.png">
-

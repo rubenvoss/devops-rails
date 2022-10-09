@@ -112,3 +112,5 @@ sudo cp -r keys/ /opt/webhook/
 ```
 http://your.ip.address:9000/hooks/redeploy
 ```
+
+## [12. Secure your server](secure_server.md)
