@@ -1,12 +1,5 @@
 # CI & CD for your Rails App(s)
 ## [**Watch a short video about CI & CD**](https://www.youtube.com/watch?v=scEDHsr3APg)
-## What are the benefits of CI & CD for my Railsapps?
-- Your Webapps will be updated automatically, after you merge to master - no more heroku push!
-- Getting your own Virtual Private Server is cheaper than having a managed host like Heroku
-- When you add automatic testing to your Webapp, less bugs will slip through to your Users
-- You can test and deploy in small & manageable steps
-- Bonus: You're only gonna have to buy one domain, and will be able to host all your Projects on it with subdomains!
-<br />
 
 ## What's in this guide?
 - Automatically test your App on a Github Server - Add a CI Pipeline to your Rails App with Github Actions
