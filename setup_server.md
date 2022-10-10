@@ -48,6 +48,9 @@ https://github.com/rubenvoss/server-files-debian-11
 
 ## 5. Download your forked repo to your servers home folder & unzip it
 ```
+ssh -i /Users/ruben/code/keys/keyfile.com.pem admin@18.019.123.234
+```
+```
 cd ~
 sudo apt update
 sudo apt install unzip wget -y
