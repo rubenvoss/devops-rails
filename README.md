@@ -20,9 +20,7 @@ https://www.netcup.de/vserver/vps.php
 <br />
 <br />
 
-## Prerequisites
-[Docker for your App](https://github.com/rubenvoss/docker-rails)
-
+## [0. Docker for your App](https://github.com/rubenvoss/docker-rails)
 ## [1. Setup your server](setup_server.md)
 ## [2. Secure your server](secure_server.md)
 ## [3. CI Pipeline](rails_continuous_integration.md)
