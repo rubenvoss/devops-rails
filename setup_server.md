@@ -42,7 +42,7 @@ https://github.com/rubenvoss/server-files-debian-11
 ## 3. Adjust the redeploy.sh with the commands you need. This file gets executed every time there's a GET request to your webhook.
 <br>
 
-## 4. Go to the code buttonn on your Fork in GitHub & right-click the Download ZIP to get the link
+## 4. Go to the code button on your Fork in GitHub & right-click the Download ZIP to get the link
 <img src="download_zip.jpg" width="400">
 <br>
 
