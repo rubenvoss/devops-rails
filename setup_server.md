@@ -39,7 +39,7 @@ https://github.com/rubenvoss/server-files-debian-11
 ## 2. In the nginx.conf file, add your domain after server_name
 <br>
 
-## 3. Adjust the redeploy.sh with the commands you need. Right now it executes a docker compose up, after getting a new commit on the main/master branch on Github
+## 3. Adjust the redeploy.sh with the commands you need. This file gets executed every time there's a GET request to your webhook.
 <br>
 
 ## 4. Go to the code buttonn on your Fork in GitHub & right-click the Download ZIP to get the link
