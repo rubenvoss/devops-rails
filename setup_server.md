@@ -87,8 +87,10 @@ server_files/setup_debian_11.sh
 ```
 # check for the status of nginx - should be active
 systemctl status nginx
+
 # check for webhook - should be active
 systemctl status webhook
+
 # check for docker - should download and run a container
 docker run hello-world
 ```
